@@ -27,9 +27,12 @@ function App() {
         <Searchbox
           defaultOptions={transform(data.results)}
           onChange={onChange}
+          data-testid="searchbox"
         />
       )}
-      {selectedCharacter && <Character character={selectedCharacter} />}
+      {selectedCharacter && (
+        <Character data-testid="character" character={selectedCharacter} />
+      )}
       {selectedCharacter && (
         <RecommendedCharacters
           onSelect={onChange}

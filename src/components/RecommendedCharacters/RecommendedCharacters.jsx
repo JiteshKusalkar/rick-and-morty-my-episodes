@@ -12,7 +12,7 @@ function RecommendedCharacters({ query, selectedCharacter, onSelect }) {
     <Wrapper>
       <Header>Recommended Characters</Header>
       <List>
-        {data &&
+        {data ? (
           data.results.reduce(
             (acc, character) => [
               ...acc,
@@ -28,7 +28,10 @@ function RecommendedCharacters({ query, selectedCharacter, onSelect }) {
                 : [])
             ],
             []
-          )}
+          )
+        ) : (
+          <NoData>No Recommended Characters</NoData>
+        )}
       </List>
     </Wrapper>
   );
@@ -52,3 +55,5 @@ const Name = styled.span`
   color: #0071b5;
   cursor: pointer;
 `;
+
+const NoData = styled(Name)``;
