@@ -1,5 +1,18 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Setting up the project
+
+Prerequisite: Install **Node v12.16.1, Yarn v.1.22.0** on your system.
+
+- Run this command - `git clone https://github.com/JiteshKusalkar/rick-and-morty-my-episodes.git`.
+- Now type `cd rick-and-morty-my-episodes/` on command line, and run `yarn install`.
+- Your app is ready. Now refer to **Available Scripts** section for running the app and tests.
+
+Additional feature -
+- One can click on any names in **Recommended Character** section to show that character's info.
+- The Episode cards are made independent of each other i.e. if even one card couldn't fetch the data, the rest of the cards remain unaffected and load their respective data.
+- The Episode cards also show a Loading state for slower networks.
+
 ## Available Scripts
 
 In the project directory, you can run:

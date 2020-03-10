@@ -14,7 +14,7 @@ function RecommendedCharacters({ query, selectedCharacter, onSelect }) {
       <List>
         {data ? (
           data.results.reduce(
-            (acc, character) => [
+            (acc, character, index) => [
               ...acc,
               ...(selectedCharacter.id !== character.id
                 ? [
@@ -22,7 +22,8 @@ function RecommendedCharacters({ query, selectedCharacter, onSelect }) {
                       key={character.id}
                       onClick={() => onSelect(character)}
                     >
-                      {character.name},
+                      {character.name}
+                      {index < data.results.length - 1 ? ',' : ''}
                     </Name>
                   ]
                 : [])

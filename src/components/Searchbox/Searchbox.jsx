@@ -23,6 +23,7 @@ function Searchbox({ defaultOptions, onChange }) {
       className="react_select"
       classNamePrefix="react_select"
       value=""
+      placeholder="Select character or type a name"
       defaultOptions={defaultOptions}
       onChange={onChange}
       isSearchable={true}
