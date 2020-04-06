@@ -1,3 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Searchbox should match the snapshot for "valid props" 1`] = `ShallowWrapper {}`;
+exports[`Searchbox should match the snapshot for "valid props" 1`] = `
+<Async
+  cacheOptions={false}
+  className="react_select"
+  classNamePrefix="react_select"
+  defaultOptions={
+    Array [
+      Object {
+        "label": "Rick",
+        "value": 1,
+      },
+    ]
+  }
+  filterOption={null}
+  isSearchable={true}
+  loadOptions={[Function]}
+  placeholder="Select character or type a name"
+  value=""
+/>
+`;

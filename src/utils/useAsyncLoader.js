@@ -10,7 +10,7 @@ const useAsyncLoader = (url, params) => {
       .then(res => res.data)
       .then(res => setData(res))
       .catch(e => setError(e));
-  }, []);
+  }, [url, params]);
 
   return [data, error];
 };

@@ -1,5 +1,125 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Character should match the snapshot for "empty props" 1`] = `ShallowWrapper {}`;
+exports[`Character should match the snapshot for "empty props" 1`] = `
+<Styled(styled.div)>
+  <styled.img
+    alt="Rick"
+    src="https//image-url"
+  />
+  <styled.div>
+    <styled.p>
+      Rick
+    </styled.p>
+    <styled.div>
+      <styled.label>
+        GENDER: 
+      </styled.label>
+      <styled.p>
+        Male
+      </styled.p>
+    </styled.div>
+    <styled.div>
+      <styled.label>
+        SPECIES: 
+      </styled.label>
+      <styled.p>
+        Human
+      </styled.p>
+    </styled.div>
+    <styled.div>
+      <styled.label>
+        STATUS: 
+      </styled.label>
+      <styled.p>
+        Alive
+      </styled.p>
+    </styled.div>
+    <styled.div>
+      <styled.label>
+        TYPE: 
+      </styled.label>
+      <styled.p>
+        unknown
+      </styled.p>
+    </styled.div>
+    <styled.div>
+      <styled.label>
+        ORIGIN: 
+      </styled.label>
+      <styled.p>
+        Earth
+      </styled.p>
+    </styled.div>
+    <styled.div>
+      <styled.label>
+        LOCATION: 
+      </styled.label>
+      <styled.p>
+        Earth
+      </styled.p>
+    </styled.div>
+  </styled.div>
+</Styled(styled.div)>
+`;
 
-exports[`Character should match the snapshot for "valid props" 1`] = `ShallowWrapper {}`;
+exports[`Character should match the snapshot for "valid props" 1`] = `
+<Styled(styled.div)>
+  <styled.img
+    alt="Rick"
+    src="https//image-url"
+  />
+  <styled.div>
+    <styled.p>
+      Rick
+    </styled.p>
+    <styled.div>
+      <styled.label>
+        GENDER: 
+      </styled.label>
+      <styled.p>
+        Male
+      </styled.p>
+    </styled.div>
+    <styled.div>
+      <styled.label>
+        SPECIES: 
+      </styled.label>
+      <styled.p>
+        Human
+      </styled.p>
+    </styled.div>
+    <styled.div>
+      <styled.label>
+        STATUS: 
+      </styled.label>
+      <styled.p>
+        Alive
+      </styled.p>
+    </styled.div>
+    <styled.div>
+      <styled.label>
+        TYPE: 
+      </styled.label>
+      <styled.p>
+        Angry Human
+      </styled.p>
+    </styled.div>
+    <styled.div>
+      <styled.label>
+        ORIGIN: 
+      </styled.label>
+      <styled.p>
+        Earth
+      </styled.p>
+    </styled.div>
+    <styled.div>
+      <styled.label>
+        LOCATION: 
+      </styled.label>
+      <styled.p>
+        Earth
+      </styled.p>
+    </styled.div>
+  </styled.div>
+</Styled(styled.div)>
+`;

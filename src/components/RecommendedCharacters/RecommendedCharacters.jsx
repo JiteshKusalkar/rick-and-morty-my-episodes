@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import styled from 'styled-components';
 
 import { getParams } from '../../api';
@@ -6,7 +6,8 @@ import { Header } from '../../styled';
 import useAsyncLoader from '../../utils/useAsyncLoader';
 
 function RecommendedCharacters({ query, selectedCharacter, onSelect }) {
-  const [data] = useAsyncLoader('character', getParams(query));
+  const params = useMemo(() => getParams(query), [query]);
+  const [data] = useAsyncLoader('character', params);
 
   return (
     <Wrapper>

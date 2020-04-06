@@ -18,6 +18,7 @@
     "axios-mock-adapter": "^1.17.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
+    "enzyme-to-json": "^3.4.4",
     "jest-styled-components": "^7.0.0",
     "react-test-renderer": "^16.13.0",
     "unroll": "^1.6.0"
@@ -47,6 +48,9 @@
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,ts,tsx}",
       "!<rootDir>/node_modules/"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
     ],
     "coverageReporters": [
       "html",
